@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="trips.css">
+    <title>Trips EuropeanAdventures</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div><img src="img/logoPlaceholder.svg" alt="EuropeanAdventures Logo"></div>
+            <div class="navLinks">
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+            </div>
+            <div>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+        <section id="hero" class="hero">
+            <div class="hero__content">
+                <h1>Travel like a Pro</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae facere modi voluptatum totam enim ab doloremque molestias voluptates! Id illo sit omnis possimus deserunt distinctio rem quis odit hic.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="filters" id="filters">
+            <div class="filterDiv" id="filterDiv">
+
+            </div>
+            <div class="filterBTNcontainer">
+                <button class="filterBTN" id="filterBTN"><img src="img/filterBTN.svg" alt=""></button>
+            </div>
+        </section>
+
+        <div class="filterPopUp" id="filterPopUp">
+            <button id="closeFilters" class="closeFilterBTN">X</button>
+
+            <form class="priceF" id="priceF">
+                <div class="minPriceSection">
+                    <label for="priceMin">Price min</label>
+                    <input min="1" type="number" id="priceMin">
+                </div>
+                <div class="maxPriceSection">
+                    <label for="priceMax">Price max</label>
+                    <input min="1" type="number" id="priceMax">
+                </div>
+            </form>
+
+            <form class="country" id="country">
+                <label for="region">Region</label>
+                <select name="region" id="region">
+                    <option id="all" value="all">all</option>
+                    <option id="cEurope" value="CentralEuropeR">Central-Europe</option>
+                    <option id="eEurope" value="EasternEuropeR">Eastern-Europe</option>
+                    <option id="mArea" value="MediterraneanAreaR">Mediterranean Area</option>
+                    <option id="wEurope" value="WesternEuropeR">Western Europe</option>
+                    <option id="sArea" value="ScandinaviaR">Scandinavia</option>
+                </select>
+               
+
+                <div class="CentralEuropeR countryF">
+                    <label for="central-europe">Central-Europe</label>
+                    <select class="select" name="central-europe" id="central-europe">
+                    <option value="Austria">Austria</option>
+                    <option value="CzechRepublic">Czech Republic</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Switzerland">Switzerland</option>
+                </select> 
+                </div>
+                
+
+
+               <div class="EasternEuropeR countryF">
+                    <label for="eastern-europe">Eastern-Europe</label>
+                    <select class="select" name="eastern-europe" id="eastern-europe">
+                    <option value="Belarus">Belarus</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Ukraine">Ukraine</option>
+                </select>
+               </div>
+               
+               
+               <div class="MediterraneanAreaR countryF">
+                    <label for="mediterranean_area">Mediterranean area</label>
+                    <select class="select" name="mediterranean_area" id="mediterranean_area">
+                    <option value="Albania">Albania</option>
+                    <option value="Bosnia and herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cypris">Cyprus</option>
+                    <option value="France">France</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Turkey">Turkey</option>
+                </select>
+               </div>
+                
+
+                <div class="WesternEuropeR countryF">
+                    <label for="western-Europe">Western Europe</label>
+                    <select class="select" name="western-Europe" id="western-Europe">
+                    <option value="Andorra">Andorra</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="France">France</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                </select>
+                </div>
+            
+
+
+                <div class="ScandinaviaR countryF">
+                    <label for="scandinavia">Scandinavia</label>
+                    <select class="select" name="scandinavia" id="scandinavia">
+                    <option value="Denmark">Denmark</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Sweden">Sweden</option>
+                </select>
+                </div>
+                
+
+            </form>
+        </div>
+
+
+        <section class="trips" id="trips">
+            <div class="trip" id="trip1">
+                <div class="trip__img">
+                    <img src="img/francr.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Germany</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $729</span></div>
+                </div>
+            </div>
+            <div class="trip" id="trip2">
+                <div class="trip__img">
+                    <img src="img/spain.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Portugal</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $1099</span></div>
+                </div>
+            </div>
+            <div class="trip" id="trip3">
+                <div class="trip__img">
+                    <img src="img/portugal.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Greece</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $576</span></div>
+                </div>
+            </div>
+            <div class="trip" id="trip4">
+                <div class="trip__img">
+                    <img src="img/trip4.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Spain</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $925</span></div>
+                </div>
+            </div>
+            <div class="trip" id="trip5">
+                <div class="trip__img">
+                    <img src="img/trip5.png">
+                </div>
+                <div class="tripContent">
+                    <h3>Austria</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip6">
+                <div class="trip__img">
+                    <img src="img/czech-republic.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Czech Republic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip7">
+                <div class="trip__img">
+                    <img src="img/hungary.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Hungary</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip8">
+                <div class="trip__img">
+                    <img src="img/poland.jpeg">
+                </div>
+                <div class="tripContent">
+                    <h3>Poland</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip9">
+                <div class="trip__img">
+                    <img src="img/slovakia.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Slovakia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip10">
+                <div class="trip__img">
+                    <img src="img/slovenia.jpeg">
+                </div>
+                <div class="tripContent">
+                    <h3>Slovenia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip11">
+                <div class="trip__img">
+                    <img src="img/switzerland.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Switzerland</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+
+            <div class="trip" id="trip12">
+                <div class="trip__img">
+                    <img src="img/belarus.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Belarus</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip13">
+                <div class="trip__img">
+                    <img src="img/bulgaria.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Bulgaria</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip14">
+                <div class="trip__img">
+                    <img src="img/estonia.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Estonia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip15">
+                <div class="trip__img">
+                    <img src="img/latvia.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Latvia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip16">
+                <div class="trip__img">
+                    <img src="img/lithuania.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Lithuania</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip17">
+                <div class="trip__img">
+                    <img src="img/moldova.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Moldova</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip18">
+                <div class="trip__img">
+                    <img src="img/romania.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Romania</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip19">
+                <div class="trip__img">
+                    <img src="img/albania.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Albania</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+           
+            <div class="trip" id="trip20">
+                <div class="trip__img">
+                    <img src="img/bosnia-and-herzegovina.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Bosnia and Herzegovina</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip21">
+                <div class="trip__img">
+                    <img src="img/croatia.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Croatia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip22">
+                <div class="trip__img">
+                    <img src="img/cyprus.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Cyprus</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip23">
+                <div class="trip__img">
+                    <img src="img/france.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>France</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip24">
+                <div class="trip__img">
+                    <img src="img/italy.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Italy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip25">
+                <div class="trip__img">
+                    <img src="img/malta.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Malta</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip26">
+                <div class="trip__img">
+                    <img src="img/montenegro.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Montenegro</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip27">
+                <div class="trip__img">
+                    <img src="img/slovenia.jpeg">
+                </div>
+                <div class="tripContent">
+                    <h3>Slovenia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+
+            <div class="trip" id="trip28">
+                <div class="trip__img">
+                    <img src="img/turkey.jpg">
+                </div>
+                <div class="tripContent">
+                    <h3>Turkey</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit laboriosam et voluptatem animi illo quibusdam cum molestiae sunt odio aspernatur tempora cupiditate rerum voluptatibus eos reiciendis a obcaecati provident.</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <div class="Price">Price p.p. from <span class="big"> $899</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+
+        <img class="logo" src="img/logoPlaceholder.svg" alt="logo">
+
+        <ul>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+
+
+        <div class="practicalLinks">
+            <a href="#">copywright &copy; 2024. EuropeanAdventures all rights reserved</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="filter.js"></script>
+</body>
+</html>
