@@ -38,7 +38,7 @@ img{
 /* GENERAL STYLES */
 
 html{
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
