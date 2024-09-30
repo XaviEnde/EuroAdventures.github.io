@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="img/logoPlaceholder.svg">
+            <button id="hamburgerMenu" class="hamburgerMenu">≡</button>
+            <ul id="nav__links" class="nav__links">
+                <li class="nav__link"><a href="#Trips">Discover Europe</a></li>
+                <li class="nav__link"><a href="trips.html">Plan Trips</a></li>
+                <li class="nav__link"><a href="#Steps">Explore</a></li>
+                <button id="closeBtn" class="closeBtn">×</button>
+            </ul>
+            <a class="nav__button" href="#Trips">Trips</a>
+        </nav>
+        <section class="hero">
+            <div class="overlay"></div>
+           
+            <div class="herogridContainer2">
+                <h1>Unlock the magic of Europe</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita quia accusamus veritatis totam, illum maiores quas, enim sit impedit voluptatum fuga, error similique explicabo. Incidunt voluptatibus quis minus aliquam.</p>
+            </div>
+            <div class="hero__BTNcontainer">
+                    <a class="hero__bookBTN" href="#">Book</a>
+                    <a class="hero__learnMoreBTN" href="#">Learn More</a>
+            </div>
+                
+            <div class="herogridContainer1">
+               <img src="img/heroSectionMainIMG.svg" alt="photo cards Europe"> 
+            </div>
+
+        </section>
+    </header>
+    
+    <section class="image-slider">
+        <div class="slide-track">
+            <div class="slide slideVertical"><img src="img/paris.jpg"></div>
+            <div class="slide"><img src="img/vacation-slider2.jpg" alt=""></div>
+            <div class="slide"><img src="img/vacation-slider3.jpg" alt=""></div>
+            <div class="slide"><img src="img/vacation-slider4.jpg" alt=""></div>
+            <div class="slide slideVertical"><img src="img/vacation-slider5.jpg" alt=""></div>
+            <div class="slide"><img src="img/vacation-slider6.jpg" alt=""></div>
+            <div class="slide slideVertical"><img src="img/vacation-slider7.jpg" alt=""></div>
+
+            <div class="slide slideVertical"><img src="img/paris.jpg" alt=""></div>
+            <div class="slide"><img src="img/vacation-slider2.jpg" alt=""></div>
+            <div class="slide"><img src="img/vacation-slider3.jpg" alt=""></div>
+            <div class="slide"><img src="img/vacation-slider4.jpg" alt=""></div>
+            <div class="slide slideVertical"><img src="img/vacation-slider5.jpg" alt=""></div>
+            <div class="slide"><img src="img/vacation-slider6.jpg" alt=""></div>
+            <div class="slide slideVertical"><img src="img/vacation-slider7.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <main>
+        <section id="Steps" class="steps">
+            <div class="smallTextHeader">Discover</div>
+            <h2>Plan Your Dream Trip with Us</h2>
+            <p class="steps__p">at out traveling agency, we offer a step-by-step guide to booking your dream trip. Choose your destination, customize your itinerary, and enjoy your adventure! </p>
+
+            <div class="steps__container">
+                <div class="step1">
+
+                    <img id="PickDestination" src="img/location-border.png" alt="location map">
+                    <div class="steps__content">   
+                        <div class="circle">1</div>                  
+                        <h4>Choose Your Destination</h4>
+                        <p>Explore our wide range of European destinations.</p>
+                    </div>
+                    <img class=arrowRight src="img/arrowRight.png" alt="arrow">
+                </div>
+                <div class="step2">
+                    <img id="activities" src="img/beach-bordered.png" alt="Beach and hiking">
+                    
+                    <div class="steps__content">
+                        <div class="circle">2</div>
+                        <h4>Customize Itinerary</h4>
+                        <p>Personalize your trip by selecting activities and attractions.</p>
+                    </div>
+                    <img class="arrowLeft" src="img/arrowLeft.png" alt="arrow">
+                </div>
+                <div class="step3">
+                    <img src="img/enjoyTravel.png" alt="location map">
+                    
+                    <div class="steps__content">
+                        <div class="circle">3</div>
+                        <h4>Enjoy your Adventure</h4>
+                        <p>Embark on an unforgettable journey through Europe.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="steps__BTNcontainer">
+                <a class="Steps__Trips" href="#Trips">See Trips</a>
+                <a class="Steps__LearnMore" href="#about">Learn More</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="aboutLeftContent">
+               <h2>Unforgettable European Trips That Capture Every Moment</h2>
+                <p>At our traveling agency, we are passionate about organizing European trips that showcase the rich culture and breathtaking nature of the continent. With a focus on creating unforgettable experiences, we strive to provide our customers with the opportunity to immerse themselves in the beauty and diversity of Europe.</p>
+                <div class="about__BTNcontainer">
+                    <a class="about__tripsBTN" href="#Trips">Trips</a>
+                    <a class="about__contactBTN" href="#contact">Contact</a>
+                </div>
+            </div>
+            
+            <img class="clipboard" src="img/clipboard.png" alt="clipboard">
+            <img class="tape" src="img/tape.png" alt="tape">
+            <div class="ImageSlider">
+                    <img class="mySlides img1 active" src="img/cityTripPicture.jpg" alt="City Trip">
+                    <img class="mySlides img2" src="img/campfire.jpg" alt="Campfire">
+                    <img class="mySlides img3" src="img/redcanyon.jpg" alt="Canyon">
+                
+                <button onclick="plusSlides(1)" class="left">&#10094;</button>
+                <button onclick="plusSlides(-1)" class="right">&#10095;</button>
+            </div>
+            
+        </section>
+        <section id="Trips" class="GuidedTours">
+            <h2>Discover the Best of Europe with Our Guided Tours</h2>
+            <div class="GuidedTours__container">
+                <div id="GuidedTours__Culture" class="GuidedTours__Culture ">
+                    <img src="img/collosseum.jpg" alt="collosseum">
+                    <h5>Immerse Yourself in Unique cultural Experiences</h5>
+                    <p>Experience the rich history, art, and traditions of Europe through our curated cultural tours.</p>
+                    <a href="trips.html">Explore &#10095;</a>
+                </div>
+                <div id="GuidedTours__Nature" class="GuidedTours__Nature">
+                    <img src="img/schotseHooglander.jpg" alt="collosseum">
+                    <h5>Embark on Unforgettable Nature Excursions in Europe</h5>
+                    <p>Discover the breathtaking landscapes, wildlife, and natural wonders of Europe with our nature tours.</p>
+                    <a href="trips.html">Book &#10095;</a>
+                </div>
+                <div id="GuidedTours__HiddenGems" class="GuidedTours__HiddenGems">
+                    <img src="img/EuropeHiddenGem.jpg" alt="City under Rock cliff">
+                    <h5>Experience Europe's Hidden Gems with Our Local Guides</h5>
+                    <p>Get off the beaten path and uncover the lesser-known treasures of Europe with our knowledgeable local guides.</p>
+                    <a href="trips.html">Discover &#10095;</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="whyUs">
+            <div class="whyUs__textContent">
+                <div class="whyUs__left">
+                    <h2>See the Beaty of Europe with Our Expertly Crafted Trips</h2>
+                </div>
+                <div class="whyUsRight">
+                    <p>At our agency, we offer personalized service and create memorable experiences for your European adventures.</p>
+                
+                    <div class="whyUsIcons">
+                        <div class="whyUs__local">
+                            <img src="img/locationIcon.png" alt="location icon">
+                            <h6>local</h6>
+                            <p>Our local expertise ensures you get an authentic and immersive travel experience.</p>
+                        </div>
+                        <div class="whyUs__personalized">
+                            <img class="customizeIcon" src="img/CustomizeIcon.png" alt="personalized icon">
+                            <h6>personalized</h6>
+                            <p>We tailor every aspect of your trip to meet your unique preferences and interests.</p>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="whyUs__img">
+                <div class="imgBackground">
+                    <img src="img/venetie.jpg" alt="venetië">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="reviews">
+        <div id="review1" class="review1 review showReview">
+            <p>
+                Booked a trip to Italy with EuropeanAdventures and it was amazing! Great customer service, fantastic accommodations, and well-organized tours. Highly recommend!
+            </p>
+            <div class="personalInfo">
+            
+                <div class="textInfo">
+                    <div>-Luis abraham</div>
+                    <img src="img/5stars.svg" alt="5 stars">
+                </div>
+            </div>
+            
+        </div>
+        <div id="review2" class="review review2">
+            <p>
+                Just came back from Thailand, all arranged by EuropeanAdventures. Everything was perfect flights, hotels, excursions. Stress-free planning and an unforgettable experience!
+            </p>
+            <div class="personalInfo">
+            
+                <div class="textInfo">
+                    <div>-Sarah Johnson</div>
+                    <img src="img/4stars.svg" alt="4 stars">
+                </div>
+            </div>
+                
+           
+        </div>
+        <div id="review3" class="review review3">
+            <p>
+                Had an incredible honeymoon in iceland thanks to EuropeanAdventures. Every detail was perfect, from romantic dinners to private tours. Already planning our next trip with them!
+            </p>
+            <div class="personalInfo">
+            
+                <div class="textInfo">
+                    <div>-John Doe</div>
+                    <img src="img/5stars.svg" alt="5 stars">
+                </div>
+            </div>
+        </div>
+        <div class="BTNcontainer">
+            <button id="reviewLeft" class="revieuwLeft">&#10094;</button>
+            <button id="reviewRight" class="revieuwRight">&#10095;</button>
+        </div>
+       
+    </section>
+
+    <section class="CTAsection">
+        <div class="CTAsection__text">
+            <h2>Travel Europe with Us</h2>
+            <p>Experience the rich culture and breathtaking beauty of Europe on our guided trips</p>
+            <div class="CTAsection__BTNcontainer">
+                <a class="CTAsection__BookBTN" href="trips.html">Book</a>
+                <a class="CTAsection__ContactBTN" href="#contact">contact</a>
+            </div>
+        </div>
+        <img class="CTAsection__img" src="img/stadEurope.jpg">
+    </section>
+
+
+    <footer>
+        <img class="logoPlaceholder" src="img/logoPlaceholder.svg">
+        <form action="https://formsubmit.co/vanderendexavi@gmail.com" method="POST" id="contact">
+            <label for="name">Name</label>
+            <input class="nameInput" type="text" required id="name" placeholder="Name">
+            
+            <input type="email" required id="email" placeholder="Email">
+            <label for="email">Email</label>
+
+            <textarea name="message" id="message" placeholder="Where do you want to talk about"></textarea>
+            <label for="message">your message</label>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="footer__text">
+            
+            <div class="list">
+                <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                    <li><a href="#">link 5</a></li>
+                    <li><a href="#">link 6</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                    <li><a href="#">link 5</a></li>
+                    <li><a href="#">link 6</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+      <img src="img/jeepTravelTrip.svg" alt="Jeep travel">
+
+      <div class="practicalLinks">
+            <a href="#">copywright &copy; 2024. EuropeanAdventures all rights reserved</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+     
+</body>
+</html>
