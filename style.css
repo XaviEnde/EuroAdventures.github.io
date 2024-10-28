@@ -40,6 +40,7 @@ img{
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
+    max-width: 100vw;
 }
 
 img{
@@ -875,6 +876,21 @@ h1{
 
 
 /* FOOTER */
+
+.iframeContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    width: 60%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0);
+    height: 500px;
+}
 
 footer{
     background-color: var(--MAIN-COLOR);
